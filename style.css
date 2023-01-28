@@ -1,0 +1,342 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --primary-color: #0084ff;
+  --secondary-color: #f2f6ff;
+  --footer-color: #172146;
+  --white: #ffffff;
+  --grey: #8190a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+/* Header Section Starts Here */
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 4%;
+  background-color: var(--white);
+  box-shadow: rgba(99, 99, 99, 0.7) 0px 0px 2px 0px;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .left .logo {
+  cursor: pointer;
+}
+
+header .left .logo h1 {
+  font-size: 2.1em;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+header .left .logo p {
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+header .left .category {
+  display: flex;
+  cursor: pointer;
+}
+
+header .left .category p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+header .left .category .icon {
+  margin: 0px 5px;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .right .info p {
+  color: var(--grey);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+header .right .button input {
+  padding: 15px 25px;
+  color: var(--white);
+  border-radius: 30px;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  header .left .logo h1 {
+    font-size: 1.9em;
+  }
+  header .left .logo p {
+    font-size: 20px;
+  }
+  header .left .category p,
+  .icon {
+    display: none;
+  }
+  header .right .info p {
+    display: none;
+  }
+  header .right .button input {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}
+
+/* Header Section Ends Here */
+/* Middle Section Starts Here */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5% 15%;
+}
+
+.hero .heading h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.hero .filter {
+  width: 170px;
+  display: flex;
+  margin: 35px 0px;
+}
+
+.hero .filter label {
+  font-weight: 600;
+}
+
+.hero .filter .icon {
+  color: var(--primary-color);
+  font-size: 17px;
+  margin: 0 10px 0 0;
+}
+
+.hero .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.hero .menu p {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  font-weight: 400;
+}
+
+.hero .menu p:first-child {
+  padding: 10px 15px;
+}
+
+.hero .menu p:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.drop {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .hero {
+    align-items: flex-start;
+    padding: 12px;
+  }
+  .hero .filter {
+    margin: 15px 0;
+  }
+  .hero .menu {
+    display: none;
+  }
+  .drop {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .drop select {
+    border: none;
+    outline: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  .drop select:after {
+    box-shadow: 4px 4px #ccc;
+  }
+}
+
+/* Middle Section Ends Here */
+/* Cards Section Starts Here */
+
+.cards {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(0, 168, 255, 0.3);
+  flex: 1 0 300px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
+.card .pic img {
+  height: 11.7em;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card .info {
+  text-align: left;
+  margin: 5px 10px;
+}
+
+.card .info h3 {
+  height: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card .info p {
+  margin: 15px 0;
+  font-family: sans-serif;
+}
+.card .info p span {
+  color: var(--primary-color);
+}
+
+.card .info label {
+  color: var(--grey);
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    flex: 1 0 350px;
+  }
+}
+
+/* Cards Section Ends Here */
+/* Footer Section Starts Here */
+
+footer {
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--footer-color);
+  padding: 1.5% 15%;
+  color: #fff;
+}
+
+footer .part h3 {
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 20px 0 20px 0;
+}
+
+footer .part ul li {
+  margin: 10px 0;
+}
+
+footer .part ul li a {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer .part p {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer .part .mail {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer .part .mail .icon {
+  margin: 0 5px 0 0;
+  font-size: 20px;
+}
+
+footer .part .social {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+footer .part .social .icon {
+  cursor: pointer;
+}
+
+footer .part .last {
+  margin-top: 55px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
