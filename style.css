@@ -226,7 +226,7 @@ header .right .button input {
   height: 420px;
   background-color: var(--secondary-color);
   border: 1px solid rgba(0, 168, 255, 0.3);
-  flex: 1 0 300px;
+  flex: 0 300px;
   border-radius: 5px;
   box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
   cursor: pointer;
@@ -252,6 +252,8 @@ header .right .button input {
 .card .info p {
   margin: 15px 0;
   font-family: sans-serif;
+  font-weight: 100;
+  opacity: 0.8;
 }
 .card .info p span {
   color: var(--primary-color);
