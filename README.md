@@ -1,2 +1,2 @@
 EdYoda HTML Module > Assignment 2: EdYoda Stories(RESPONSIVE). (Preveiw)
-![download](https://user-images.githubusercontent.com/88980866/215290866-c47dc7a8-18e1-40a9-abd3-69902e053e0d.png)
+![image](https://user-images.githubusercontent.com/88980866/217048139-48362c15-8615-41bf-905e-2a732949b596.png)
